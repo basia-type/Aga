@@ -46,7 +46,7 @@ namespace Aga
         {
             Console.WriteLine(Imie, Nazwisko, DataUrodzenia);
         }
-        public class Student
+        public class Student: Osoba
         {
             private int rok;
             private int grupa;
@@ -63,11 +63,11 @@ namespace Aga
                 get { return grupa; }
                 set { grupa = value; }
             }
-            /*public int nrIndeksu
+            public int NrIndeksu
             {
-                get { return nrindeksu; }
-                set { nrindeksu = value; }
-            }*/
+                get { return nrIndeksu; }
+                set { nrIndeksu = value; }
+            }
             public Student()
             {
                 rok = 0;
@@ -80,7 +80,7 @@ namespace Aga
                 Grupa = grupa_;
                 nrIndeksu = nrIndeksu_;
             }
-            public void WypiszInfo() //override
+            public override void WypiszInfo()
             {
                 Console.WriteLine("rok:"+ rok, "grupa:"+ grupa, "nrIndeksu:"+ nrIndeksu);
             }
@@ -103,7 +103,7 @@ namespace Aga
                 Console.WriteLine("nazwaPrzedmiotu" + nazwaPrzedmiotu);
             }
 
-            public class Ocena
+            public class Ocena: Student
             {
                 private string nazwaPrzedmiotu;
                 private string data;
@@ -143,7 +143,7 @@ namespace Aga
                 {
                     Console.WriteLine("nazwaPrzedmiotu" + nazwaPrzedmiotu, "data" + data, "wartosc" + wartosc);
                 }
-                public class Pilkarz
+                public class Pilkarz: Osoba
                 {
                     private string pozycja;
                     private string klub;
@@ -176,7 +176,7 @@ namespace Aga
                         klub = klub_;
                         this.liczbaGoli = liczbaGoli_;
                     }
-                    public void WypiszInfo() //override
+                    public override void WypiszInfo()
                     {
                         Console.WriteLine("pozycja:" + pozycja, "klub:" + klub, "liczbaGoli:" + liczbaGoli);
                     }

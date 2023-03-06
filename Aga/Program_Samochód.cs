@@ -74,7 +74,7 @@ internal class Program_Graz
                 //o2.WypiszInfo();
                 //o3.WypiszInfo();
 
-                Student s = new Student("Krzysztof", "Jeż", "22.12.1990", 2, 5, 54321);
+                Osoba s = new Student("Krzysztof", "Jeż", "22.12.1990", 2, 5, 54321);
                 //Pilkarz p = new Pilkarz("Piotr", "Kos", "14.09.1984", "napastnik", "FC Politechnika");
 
                 //s.WypiszInfo();
