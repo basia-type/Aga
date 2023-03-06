@@ -49,9 +49,11 @@ namespace Aga
         public class Student: Osoba
         {
             private int rok;
-            private int grupa;
+            private int grupa
             private int nrIndeksu;
-            private List<Ocena> oceny = new List<Ocena>();
+            private List<string> oceny = new List<string>();
+            Ocena s = new Ocena();
+            Ocena s2 = new Ocena();
 
             public int Rok
             {
@@ -84,9 +86,9 @@ namespace Aga
             {
                 Console.WriteLine("rok:"+ rok, "grupa:"+ grupa, "nrIndeksu:"+ nrIndeksu);
             }
-            public void DodajOcene(string nazwaPrzedmiotu)
+            /*public void listaOcen.Add(s)
             {
-                /*return (nazwaPrzedmiotu);*/
+                return (s);
             }
             /*public void WypiszOceny()
             {
@@ -98,10 +100,7 @@ namespace Aga
             {
                 Console.WriteLine("nazwaPrzedmiotu"+ nazwaPrzedmiotu);
             }
-            public void UsunOceny(string nazwaPrzedmiotu)
-            {
-                Console.WriteLine("nazwaPrzedmiotu" + nazwaPrzedmiotu);
-            }
+            //public void listaOcena.Clear ();
 
             public class Ocena: Student
             {

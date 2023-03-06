@@ -68,16 +68,15 @@ internal class Program_Graz
 
             {
                 Osoba o = new Osoba("Adam", "Miś", "20.03.1980");
-                Osoba o2 = new Student ("Michal", "Kot", "13.04.1990", 2, 1, 12345);
-                //Osoba o3 = new Pilkarz("Mateusz", "Żbik", "10.08.1986", "obrońca", "FC Czestochowa");
                 o.WypiszInfo();
-                //o2.WypiszInfo();
+                Osoba o2 = new Student ("Michal", "Kot", "13.04.1990", 2, 1, 12345);
+                o2.WypiszInfo();
+                //Osoba o3 = new Pilkarz("Mateusz", "Żbik", "10.08.1986", "obrońca", "FC Czestochowa");
                 //o3.WypiszInfo();
 
                 Osoba s = new Student("Krzysztof", "Jeż", "22.12.1990", 2, 5, 54321);
+                s.WypiszInfo();
                 //Pilkarz p = new Pilkarz("Piotr", "Kos", "14.09.1984", "napastnik", "FC Politechnika");
-
-                //s.WypiszInfo();
                 //p.WypiszInfo();
 
                 //((Pilkarz)o3).StrzelGola();
@@ -86,7 +85,6 @@ internal class Program_Graz
 
                 //o3.WypiszInfo();
                 //p.WypiszInfo();
-
                 Console.ReadKey();
             }
         }
